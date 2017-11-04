@@ -6,7 +6,9 @@
  * @author Duggie
  * @since 2017-11-03
  */
- 
+
+require_once(__DIR__ . '/Node.php');
+
 class LinkedList
 {
     /**
