@@ -59,6 +59,7 @@ class LinkedList
 
     /**
      * Display the contents of the linked list.
+     * (Provided by HackerRank.)
      * 
      * @param $head
      *

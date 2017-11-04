@@ -2,18 +2,24 @@
 
 declare(strict_types = 1);
 
+/**
+ * Script to build up and output the linked list contents.
+ *
+ * Assumptions:
+ * * values are whole integer numbers, greater than zero.
+ * 
+ * @author Duggie
+ * @since 2017-11-03
+ */
+
 require_once(__DIR__ . '/Node.php');
 require_once(__DIR__ . '/LinkedList.php');
 
-$T = intval(fgets(STDIN));
+$list = new LinkedList;
 
 $head = null;
-
-$mylist = new LinkedList;
-
-while ($T-->0) {
-    $data = intval(fgets(STDIN));
-    $head = $mylist->insert($head,$data);
+while ($data = intval(fgets(STDIN))) {
+    $head = $list->insert($head, $data);
 }
 
-$mylist->display($head);
+$list->display($head);

@@ -2,6 +2,7 @@
 
 /**
  * A node (or item) in a linked list.
+ * (Provided by HackerRank.)
  *
  * @author Duggie
  * @since 2017-11-03
@@ -18,7 +19,7 @@ class Node
      */
     function __construct($data)
     {
-        $this->data = $d;
+        $this->data = $data;
         $this->next = null;
     }
 }
