@@ -12,7 +12,6 @@ declare(strict_types = 1);
  * @since 2017-11-03
  */
 
-require_once(__DIR__ . '/Node.php');
 require_once(__DIR__ . '/LinkedList.php');
 
 $list = new LinkedList;
